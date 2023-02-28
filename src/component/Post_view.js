@@ -13,7 +13,7 @@ import Image from "./Image"
 function PostView() {
     const [info, setInfo] = useState([])
     useEffect(() => {
-        axios.get("http://localhost:5000/post")
+        axios.get("https://instaclone-api-backend.onrender.com/post")
         .then((response) => {
           setInfo(response.data.data);
         });   

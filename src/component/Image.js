@@ -7,7 +7,7 @@ const Image = ({sendIndex}) => {
     const [postIndex, setPostIndex] = useState(Number)
 
     useEffect(() => {
-        axios.get("http://localhost:5000/image")
+        axios.get("https://instaclone-api-backend.onrender.com/image")
         .then((response) => {
         
           setData(response.data);
